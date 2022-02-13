@@ -5,7 +5,7 @@
 
 ### COMANDOS DE SELECCION
     
-    #### select
-    #### consultas con clausula WHERE 
-    #### Consultas con los operadores logicos 
-    #### Consultas con los operadores de comparacion
+    - select
+    - consultas con clausula WHERE 
+    - Consultas con los operadores logicos 
+    - Consultas con los operadores de comparacion
