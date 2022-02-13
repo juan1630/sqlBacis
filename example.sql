@@ -47,3 +47,27 @@ SELECT * FROM PRODUCTOS WHERE PRECIO>=144;
 /*
 	Trae los productos cuyo precio sean MAYOR O IGUAL a 500000
 */
+
+
+
+SELECT * FROM PRODUCTOS WHERE FECHA BETWEEN '2002-02-02' AND '2002-05-05';
+
+/*
+    Sentencia between ayuda a obtener rangos, en este caso es un rango de fechas pero si puede usar con otros tipos de datos
+*/
+
+/*
+    Otra forma de hacer la misma consulta
+*/
+
+
+SELECT * FROM PRODUCTOS WHERE FECHA >= '2002-02-02' AND FECHA  <= '2002-05-05';
+
+
+
+SELECT * FROM PRODUCTOS WHERE SECCI_N='DEPORTES' OR SECCI_N='CER?MICA' ORDER BY SECCI_N;
+/*
+	La clausula order by orderna por el tipo de dato, si se trata de un tipo de dato de string ordena de forma alfabetica, si es de tipo de numerico por orden asendente
+*/
+
+SELECT * FROM PRODUCTOS WHERE SECCI_N='DEPORTES' OR SECCI_N='CER?MICA' ORDER BY PA_SDEORIGEN;

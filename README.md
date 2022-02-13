@@ -5,7 +5,9 @@
 
 ### COMANDOS DE SELECCION
     
-    - select
+- select
+
     - consultas con clausula WHERE 
     - Consultas con los operadores logicos 
     - Consultas con los operadores de comparacion
+    - Conultas entre rangos de fechas o de otros tipos de datos con la sentencia BETWEEN
