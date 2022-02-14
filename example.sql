@@ -1,7 +1,7 @@
 use cursoSql;
 
 /*
-	Comandos de seleccion simple
+    COMANNDOS DE SELECCION SIMPLE 
 */
 select *  from CLIENTES;
 
@@ -71,3 +71,40 @@ SELECT * FROM PRODUCTOS WHERE SECCI_N='DEPORTES' OR SECCI_N='CER?MICA' ORDER BY 
 */
 
 SELECT * FROM PRODUCTOS WHERE SECCI_N='DEPORTES' OR SECCI_N='CER?MICA' ORDER BY PA_SDEORIGEN;
+
+
+SELECT * FROM PRODUCTOS WHERE SECCI_N='DEPORTES' OR SECCI_N='CER?MICA' ORDER BY PA_SDEORIGEN DESC;
+/*
+    Ordenamos de manera descendente por medio de la sentencia DESC o de forma ascendente con ASNC
+    podemos ordenar por diferentes campo un ejemplo puede ser el precio, fecha, color, etc.
+*/
+
+
+SELECT * FROM PRODUCTOS WHERE SECCI_N='DEPORTES' OR SECCI_N='CER?MICA' ORDER BY NOMBREART_CULO  ASC;
+/*
+    Otro ejemplo de como se pueden order los campos
+*/
+
+
+SELECT * FROM PRODUCTOS WHERE SECCI_N='DEPORTES' OR SECCI_N='CER?MICA' ORDER BY NOMBREART_CULO DESC, PRECIO ASC;
+/*
+    Ordenamos de forma descendente y por nombre del articulo, dentro de esa ordenacion ordenamos por precio de manera asnedente
+*/
+
+
+SELECT * FROM PRODUCTOS WHERE SECCI_N='DEPORTES' OR SECCI_N='CER?MICA' ORDER BY NOMBREART_CULO DESC, PRECIO ASC, PA_SDEORIGEN ASC;
+/*
+	Ordena por varios campos 
+*/
+
+
+SELECT SECCI_N, SUM( PRECIO ) FROM PRODUCTOS GROUP BY SECCI_N;
+/*
+	Ordena los registros por la seccion y de esos les saca la suma total de los productos
+*/
+
+
+SELECT SECCI_N, SUM( PRECIO ) AS SUMA_PRODUCTOS FROM PRODUCTOS GROUP BY SECCI_N ORDER BY SUMA_PRODUCTOS ASC;
+/*
+	EL AS agrega un alias a la columna 
+*/

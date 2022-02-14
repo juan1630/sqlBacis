@@ -12,3 +12,5 @@
     - Consultas con los operadores de comparacion ( >=, <=, >, <, = )
     - Conultas entre rangos de fechas o de otros tipos de datos con la sentencia BETWEEN
     - Consultas con ORDER BY
+    - Consultas con ORDER BY por varios parametros de ordenacion
+    - Consultas de agrupacion o totales
