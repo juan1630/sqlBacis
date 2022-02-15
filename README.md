@@ -14,3 +14,5 @@
     - Consultas con ORDER BY
     - Consultas con ORDER BY por varios parametros de ordenacion
     - Consultas de agrupacion o totales
+    - Consultas con la clausula where
+    - Consultas con las fuciones (SUM, AVG, MIN Y MAX)
