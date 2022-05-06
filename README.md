@@ -16,3 +16,4 @@
     - Consultas de agrupacion o totales
     - Consultas con la clausula where
     - Consultas con las fuciones (SUM, AVG, MIN Y MAX)
+    - Consultas SQL fucniones frecuentes Now, dateDiff, date_format, conact, la funcion now en sqlserver no se usa, se usa la getDate

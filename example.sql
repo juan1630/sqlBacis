@@ -122,3 +122,26 @@ SELECT POBLACI_N  ,COUNT( C_DIGOCLIENTE ) AS NUMEROCLIENTES FROM CLIENTES  GROUP
 /**
 		La funcion count es igual a la fucnion avg y la funcion sum
 */
+
+
+
+/**
+    La funcion now nos devulve el dia y la hora a la que se ahce la consulta 
+    Datediff nos devulev la diferencia que hay entre 2 fechas 
+    Date_format nos permite formatear los resultados a mas legibles  
+    Trucate 
+    Concat permite concaenar las cadenas de texto
+    Estas consultas se hace sobre registros individuales y no sobre grupos de datos
+    */
+
+select NOMBREART_CULO, PRECIO, SECCI_N, PRECIO*1.21 as precioIva from PRODUCTOS;
+-- Ejecutamos la expresion matematica de multiplicar por el iva, para obtener el precio con el IVA
+
+
+-- consulta con el round 
+select NOMBREART_CULO, PRECIO, SECCI_N,ROUND (PRECIO*1.21, 2) as precioIva from PRODUCTOS;
+--  redondea a 2 digitos en la consulta
+
+select NOMBREART_CULO, PRECIO, SECCI_N ,PRECIO-3 as precioResta from PRODUCTOS;
+
+--consulta con resta
