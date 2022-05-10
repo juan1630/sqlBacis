@@ -145,3 +145,16 @@ select NOMBREART_CULO, PRECIO, SECCI_N,ROUND (PRECIO*1.21, 2) as precioIva from 
 select NOMBREART_CULO, PRECIO, SECCI_N ,PRECIO-3 as precioResta from PRODUCTOS;
 
 --consulta con resta
+
+
+-- palabra resevada union, se encarga de unir las dos tablas, estas consultas debe de cumplir con las siguinentes caracterisitcas:
+    -- Deben de tener el mismo numero de campos en ambas tablas
+    -- Tipos de datos compatibles deben de ser del mismo tipo de dato 
+    --  las consultas se combinan 
+
+
+SELECT * FROM PRODUCTOS WHERE SECCI_N = 'DEPORTES' UNION SELECT * FROM PRODUCTOS  WHERE SECCI_N = 'DEPORTES DE RIESGO';
+
+SELECT * FROM PRODUCTOS WHERE PRECIO > 500 UNION SELECT * FROM PRODUCTOS WHERE SECCI_N = 'ALTA COSTURA';
+
+-- la senetcia union si hay registrados repetidos no los muestra, el unionall, hace lo contrario 

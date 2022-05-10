@@ -17,3 +17,4 @@
     - Consultas con la clausula where
     - Consultas con las fuciones (SUM, AVG, MIN Y MAX)
     - Consultas SQL fucniones frecuentes Now, dateDiff, date_format, conact, la funcion now en sqlserver no se usa, se usa la getDate
+    - Las consultas multitabla, son aquellas que mandan a llamar amultiples tablas, tambien se les llama consultas de union y existen 2 tipos, al de union interna y union externa
