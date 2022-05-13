@@ -19,3 +19,5 @@
     - Consultas SQL fucniones frecuentes Now, dateDiff, date_format, conact, la funcion now en sqlserver no se usa, se usa la getDate
     - Las consultas multitabla, son aquellas que mandan a llamar amultiples tablas, tambien se les llama consultas de union y existen 2 tipos, al de union interna y union externa
     - inner join este tipo de join sirve para darnos los registros que exiten en las 2 tablas
+    - Subconsultas se dividen en 3 grupos, las escalonadas, de lista y correclacionadas
+        - Subconsultas es una consulta dentro de otra, en otras palabras un select dentro de otro select
