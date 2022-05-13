@@ -21,3 +21,5 @@
     - inner join este tipo de join sirve para darnos los registros que exiten en las 2 tablas
     - Subconsultas se dividen en 3 grupos, las escalonadas, de lista y correclacionadas
         - Subconsultas es una consulta dentro de otra, en otras palabras un select dentro de otro select
+            - Las consultas escalonadas solo regresan un registro
+            -   Las consultas de lista devuelven un listado de registros
