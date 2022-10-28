@@ -194,3 +194,49 @@ SELECT * INTO CLIENTES_MADRID FROM CLIENTES WHERE POBLACI_N = 'MADRID';
 SELECT * FROM CLIENTES_MADRID;
 -- CREAMOS UNA TABLA APARTIR DE OTRA 
 --No es lo mismo el create table que el select into, ya que no especifica los tipos de datos de las tablas
+
+
+/*
+    convertir tipos de datos en SQL
+        Para convertir un dtipo de dato en otro, se usa la sentencia CAST O CONVERT
+*/
+
+
+SELECT MAX( convert(totalCompra, DECIMAL) ) AS compraAlta FROM ventasservicios;	
+-- Se usa el convert para convertir de un tipo text a un numero y obtener la venta mas alta 
+SELECT MIN( convert(totalCompra, DECIMAL) ) AS compraAlta FROM ventasservicios;	
+--Obtenemos la venta mas baja 
+
+
+
+/*
+    Queries de Sql para Horizonte 
+*/
+
+
+
+USE PRUEBAS;
+SELECT * FROM ventasservicios;
+SELECT * FROM ventasservicios ORDER BY folio;
+SELECT SUM( totalCompra ) FROM ventasservicios;
+select * from ventasservicios where _id LIKE '%61916b8be902aa2b84883b60%';
+
+SELECT COUNT( compraConMembresia ) AS compraConMembresia FROM ventasservicios WHERE compraConMembresia = 'True';
+SELECT COUNT( compraConMembresia )  AS TOTAL FROM ventasservicios; 
+
+
+SELECT SUM( totalCompra ) FROM ventasservicios WHERE compraConMembresia = 'True';
+SELECT SUM( totalCompra ) FROM ventasservicios WHERE compraConMembresia = 'False';
+
+SELECT * FROM totalCompra;
+
+
+SELECT SUM( convert(totalCompra, DECIMAL) ) AS total  FROM ventasservicios;
+
+
+SELECT MAX( convert(totalCompra, DECIMAL) ) AS compraAlta FROM ventasservicios;	
+SELECT MIN( convert(totalCompra, DECIMAL) ) AS compraAlta FROM ventasservicios;	
+
+SELECT * FROM ventasservicios WHERE totalCompra = 165000;
+
+SELECT totlaCompra FROM ventasservicios; 

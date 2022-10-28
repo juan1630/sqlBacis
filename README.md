@@ -3,7 +3,7 @@
 ## SQL es un lenguaje de consulta de datos, su nombre viene de la siglas en ingles (Strucutre Query Language)
 - Existen varios gestores de bases de dato como lo son SQL server, MySql, Oracle, etc.
 
-### COMANDOS DE SELECCION
+### COMANDOS DE SELECCION:
     
 - SELECT
 
@@ -23,3 +23,6 @@
         - Subconsultas es una consulta dentro de otra, en otras palabras un select dentro de otro select
             - Las consultas escalonadas solo regresan un registro
             -   Las consultas de lista devuelven un listado de registros
+    - Operadores 
+        - Operador LIKE, este operador nos ayuda a manejar la busqueda como si fuera una expresion regular. 
+            Sintaxis: SELECT * FROM table WHERE columnn LIKE '%name%'
